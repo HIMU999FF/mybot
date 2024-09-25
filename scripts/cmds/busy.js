@@ -31,12 +31,12 @@ module.exports = {
 			alreadyOnWithReason: "Hiện tại người dùng %1 đang bận với lý do: %2"
 		},
 		en: {
-			turnedOff: "✅ | Do not disturb mode has been turned off",
-			turnedOn: "✅ | Do not disturb mode has been turned on",
-			turnedOnWithReason: "✅ | Do not disturb mode has been turned on with reason: %1",
-			turnedOnWithoutReason: "✅ | Do not disturb mode has been turned on",
+			turnedOff: "✅ | TURNED OFF",
+			turnedOn: "✅ | TURNED ON",
+			turnedOnWithReason: "✅ | Turned On With Reason: %1",
+			turnedOnWithoutReason: "✅ | TURNED ON",
 			alreadyOn: "User %1 is currently busy",
-			alreadyOnWithReason: "User %1 is currently busy with reason: %2"
+			alreadyOnWithReason: "%2"
 		}
 	},
 
