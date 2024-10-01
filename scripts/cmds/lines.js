@@ -1,51 +1,68 @@
-const axios = require("axios");
 const fs = require("fs-extra");
 const path = require("path");
 
 module.exports = {
   config: {
-    name: "randomtext",
-    aliases: ['rt', 'random' ],
+    name: "lines",
+    aliases: ["line", "sads", "squote"],
     version: "1.0",
-    author: "Vex_kshitiz",
+    author: "Minato",
     role: 0,
-    shortDescription: { en: "Sends a random text from a predefined list." },
-    longDescription: { en: "Get a random motivational quote or fun fact from our curated list." },
+    shortDescription: { en: "Get a random sad quote." },
+    longDescription: { en: "Fetch a random sad quote from the predefined list." },
     category: "fun",
-    guide: { en: "Use {p}randomtext to receive a random text." }
+    guide: { en: "Use {p}lines to get a random sad quote." }
   },
-  onStart: async function ({ api, event, args, prefix }) {
+  onStart: async function ({ api, event }) {
     try {
-      console.log('Received message:', event.body);
-      console.log('Prefix:', prefix);
-
-      const texts = [
+      // Define an array of sad lines
+      const sadLines = [
         "The journey of a thousand miles begins with one step.",
         "Life is what happens when you're busy making other plans.",
         "Get busy living or get busy dying.",
         "You have within you right now, everything you need to deal with whatever the world can throw at you.",
         "Believe you can and you're halfway there."
       ];
+      
+      
 
-      const getRandomText = () => {
-        const randomIndex = Math.floor(Math.random() * texts.length);
-        return texts[randomIndex];
-      };
+      // React to the message with a waiting symbol
+      const waitingSymbol = "⌛";
+      await api.setMessageReaction(waitingSymbol, event.messageID);
 
-      const messageText = event.body.toLowerCase();
-      console.log('Message text:', messageText);
-      console.log('Prefix + line:', prefix + 'line');
+      // Randomly select a sad line
+      const randomIndex = Math.floor(Math.random() * sadLines.length);
+      const selectedSadLine = sadLines[randomIndex];
 
-      if (messageText.startsWith(prefix + 'line')) {
-        console.log('Match found!');
-        const responseText = getRandomText();
-        await api.sendMessage(responseText, event.threadID, event.messageID);
-      } else {
-        console.log('No match found.');
-      }
+      // Send the selected sad line as a message
+      const messageBody = `"${selectedSadLine}"`;
+      api.sendMessage(messageBody, event.threadID, (err, info) => {
+        if (err) {
+          console.error('Error occurred:', err);
+          const errorMessage = `An error occurred while sending the sad line: ${err.message}`;
+          api.sendMessage(errorMessage, event.threadID, (err) => {
+            if (err) {
+              console.error('Error occurred:', err);
+            }
+          });
+        } else {
+          // React with a success symbol
+          const successSymbol = "✅";
+          api.setMessageReaction(successSymbol, event.messageID, (err) => {
+            if (err) {
+              console.error('Error occurred:', err);
+            }
+          });
+        }
+      });
     } catch (error) {
-      console.error(error);
-      return api.sendMessage(`An error occurred.`, event.threadID, event.messageID);
+      console.error('Error occurred:', error);
+      const errorMessage = `An error occurred while sending the sad line: ${error.message}`;
+      api.sendMessage(errorMessage, event.threadID, (err) => {
+        if (err) {
+          console.error('Error occurred:', err);
+        }
+      });
     }
   }
 };
