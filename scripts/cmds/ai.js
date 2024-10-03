@@ -26,7 +26,7 @@ module.exports = {
 
     const upol = event.body.substring(ahprefix.length).trim();
     if (!upol) {
-      await message.reply('IT4CHI H3R3 ♥');
+      await message.reply('Hi! What can I do for you today?');
       return;
     }
 
@@ -40,7 +40,7 @@ module.exports = {
 
     const encodedPrompt = encodeURIComponent(args.join(' '));
 
-    await message.reply('im thinking sir 🤔..');
+    await message.reply('');
 
     const response = await axiosInstance.get(`https://priyansh-ai.onrender.com/gemini/ai?query=${encodedPrompt}`);
     const UPoL = response.data;
