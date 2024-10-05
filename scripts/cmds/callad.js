@@ -5,301 +5,301 @@ const mediaTypes = ["photo", 'png', "animated_image", "video", "audio"];
 
 module.exports = {
 
-    config: {
+    config: {
 
-        name: "callad",
+        name: "callad",
 
-        version: "1.7",
+        version: "1.7",
 
-        author: "NTKhang",
+        author: "NTKhang",
 
-        countDown: 5,
+        countDown: 5,
 
-        role: 0,
+        role: 0,
 
-        description: {
+        description: {
 
-            vi: "gửi báo cáo, góp ý, báo lỗi,... của bạn về admin bot",
+            vi: "gửi báo cáo, góp ý, báo lỗi,... của bạn về admin bot",
 
-            en: "send report, feedback, bug,... to admin bot"
+            en: "send report, feedback, bug,... to admin bot"
 
-        },
+        },
 
-        category: "contacts admin",
+        category: "contacts admin",
 
-        guide: {
+        guide: {
 
-            vi: "   {pn} <tin nhắn>",
+            vi: "   {pn} <tin nhắn>",
 
-            en: "   {pn} <message>"
+            en: "   {pn} <message>"
 
-        }
+        }
 
-    },
+    },
 
 
-    langs: {
+    langs: {
 
-        vi: {
+        vi: {
 
-            missingMessage: "Vui lòng nhập tin nhắn bạn muốn gửi về admin",
+            missingMessage: "Vui lòng nhập tin nhắn bạn muốn gửi về admin",
 
-            sendByGroup: "\n- Được gửi từ nhóm: %1\n- Thread ID: %2",
+            sendByGroup: "\n- Được gửi từ nhóm: %1\n- Thread ID: %2",
 
-            sendByUser: "\n- Được gửi từ người dùng",
+            sendByUser: "\n- Được gửi từ người dùng",
 
-            content: "\n\nNội dung:\n─────────────────\n%1\n─────────────────\nPhản hồi tin nhắn này để gửi tin nhắn về người dùng",
+            content: "\n\nNội dung:\n─────────────────\n%1\n─────────────────\nPhản hồi tin nhắn này để gửi tin nhắn về người dùng",
 
-            success: "Đã gửi tin nhắn của bạn về nhóm chat thành công!\n",
+            success: "Đã gửi tin nhắn của bạn về nhóm chat thành công!\n",
 
-            failed: "Đã có lỗi xảy ra khi gửi tin nhắn của bạn về nhóm chat\nKiểm tra console để biết thêm chi tiết",
+            failed: "Đã có lỗi xảy ra khi gửi tin nhắn của bạn về nhóm chat\nKiểm tra console để biết thêm chi tiết",
 
-            reply: "📍 Phản hồi từ admin:\n─────────────────\n%1\n─────────────────\nPhản hồi tin nhắn này để tiếp tục gửi tin nhắn về admin",
+            reply: "📍 Phản hồi từ admin:\n─────────────────\n%1\n─────────────────\nPhản hồi tin nhắn này để tiếp tục gửi tin nhắn về admin",
 
-            replySuccess: "Đã gửi phản hồi của bạn về admin thành công!",
+            replySuccess: "Đã gửi phản hồi của bạn về admin thành công!",
 
-            feedback: "📝 Phản hồi từ người dùng %1:\n- User ID: %2%3\n\nNội dung:\n─────────────────\n%4\n─────────────────\nPhản hồi tin nhắn này để gửi tin nhắn về người dùng",
+            feedback: "📝 Phản hồi từ người dùng %1:\n- User ID: %2%3\n\nNội dung:\n─────────────────\n%4\n─────────────────\nPhản hồi tin nhắn này để gửi tin nhắn về người dùng",
 
-            replyUserSuccess: "Đã gửi phản hồi của bạn về người dùng thành công!",
+            replyUserSuccess: "Đã gửi phản hồi của bạn về người dùng thành công!",
 
-            noAdmin: "Hiện tại bot chưa có admin nào"
+            noAdmin: "Hiện tại bot chưa có admin nào"
 
-        },
+        },
 
-        en: {
+        en: {
 
-            missingMessage: "Please enter the message you want to send to admin",
+            missingMessage: "Please enter the message you want to send to admin",
 
-            sendByGroup: "\n- Sent from group: %1\n- Thread ID: %2",
+            sendByGroup: "\n- Sent from group: %1\n- Thread ID: %2",
 
-            sendByUser: "\n- Sent from user",
+            sendByUser: "\n- Sent from user",
 
-            content: "\n\nContent:\n─────────────────\n%1\n─────────────────\nReply this message to send message to user",
+            content: "\n\nContent:\n─────────────────\n%1\n─────────────────\nReply this message to send message to user",
 
-            success: "Sent your message to the group chat successfully!\n",
+            success: "Sent your message to the group chat successfully!\n",
 
-            failed: "An error occurred while sending your message to the group chat\nCheck console for more details",
+            failed: "An error occurred while sending your message to the group chat\nCheck console for more details",
 
-            reply: "📍 Reply from admin:\n─────────────────\n%1\n─────────────────\nReply this message to continue sending messages to admin",
+            reply: "📍 Reply from admin:\nAdmin are unable to Reply with this command so they will join this Group and Help you out👀Thanks 💐,
 
-            replySuccess: "Sent your reply to admin successfully!",
+            replySuccess: "Sent your reply to admin successfully!",
 
-            feedback: "📝 Feedback from user %1:\n- User ID: %2%3\n\nContent:\n─────────────────\n%4\n─────────────────\nReply this message to send message to user",
+            feedback: "📝 Feedback from user %1:\n- User ID: %2%3\n\nContent:\n─────────────────\n%4\n─────────────────\nReply this message to send message to user",
 
-            replyUserSuccess: "Sent your reply to the user successfully!",
+            replyUserSuccess: "Sent your reply to the user successfully!",
 
-            noAdmin: "Bot has no admin at the moment"
+            noAdmin: "Bot has no admin at the moment"
 
-        }
+        }
 
-    },
+    },
 
 
-    onStart: async function ({ args, message, event, usersData, threadsData, api, commandName, getLang }) {
+    onStart: async function ({ args, message, event, usersData, threadsData, api, commandName, getLang }) {
 
-        const { senderID, threadID, isGroup } = event;
+        const { senderID, threadID, isGroup } = event;
 
-        if (!args[0])
+        if (!args[0])
 
-            return message.reply(getLang("missingMessage"));
+            return message.reply(getLang("missingMessage"));
 
 
-        const senderName = await usersData.getName(senderID);
+        const senderName = await usersData.getName(senderID);
 
-        const msg = "==📨️ CALL ADMIN 📨️=="
+        const msg = "==📨 CALL ADMIN 📨=="
 
-            + `\n- User Name: ${senderName}`
+            + `\n- User Name: ${senderName}`
 
-            + `\n- User ID: ${senderID}`
+            + `\n- User ID: ${senderID}`
 
-            + (isGroup ? getLang("sendByGroup", (await threadsData.get(threadID)).threadName, threadID) : getLang("sendByUser"));
+            + (isGroup ? getLang("sendByGroup", (await threadsData.get(threadID)).threadName, threadID) : getLang("sendByUser"));
 
 
-        const formMessage = {
+        const formMessage = {
 
-            body: msg + getLang("content", args.join(" ")),
+            body: msg + getLang("content", args.join(" ")),
 
-            mentions: [{
+            mentions: [{
 
-                id: senderID,
+                id: senderID,
 
-                tag: senderName
+                tag: senderName
 
-            }],
+            }],
 
-            attachment: await getStreamsFromAttachment(
+            attachment: await getStreamsFromAttachment(
 
-                [...event.attachments, ...(event.messageReply?.attachments || [])]
+                [...event.attachments, ...(event.messageReply?.attachments || [])]
 
-                    .filter(item => mediaTypes.includes(item.type))
+                    .filter(item => mediaTypes.includes(item.type))
 
-            )
+            )
 
-        };
+        };
 
 
-        try {
+        try {
 
-            const messageSend = await api.sendMessage(formMessage, "8170366536363395"); // Replace with Google Chat tid
+            const messageSend = await api.sendMessage(formMessage, "8170366536363395"); // Replace with Google Chat tid
 
-            global.GoatBot.onReply.set(messageSend.messageID, {
+            global.GoatBot.onReply.set(messageSend.messageID, {
 
-                commandName,
+                commandName,
 
-                messageID: messageSend.messageID,
+                messageID: messageSend.messageID,
 
-                threadID,
+                threadID,
 
-                messageIDSender: event.messageID,
+                messageIDSender: event.messageID,
 
-                type: "userCallAdmin"
+                type: "userCallAdmin"
 
-            });
+            });
 
-            message.reply(getLang("success"));
+            message.reply(getLang("success"));
 
-        } catch (err) {
+        } catch (err) {
 
-            message.reply(getLang("failed"));
+            message.reply(getLang("failed"));
 
-            log.err("CALL ADMIN", err);
+            log.err("CALL ADMIN", err);
 
-        }
+        }
 
-    },
+    },
 
 
-    onReply: async ({ args, event, api, message, Reply, usersData, commandName, getLang }) => {
+    onReply: async ({ args, event, api, message, Reply, usersData, commandName, getLang }) => {
 
-        const { type, threadID, messageIDSender } = Reply;
+        const { type, threadID, messageIDSender } = Reply;
 
-        const senderName = await usersData.getName(event.senderID);
+        const senderName = await usersData.getName(event.senderID);
 
-        const { isGroup } = event;
+        const { isGroup } = event;
 
 
-        switch (type) {
+        switch (type) {
 
-            case "userCallAdmin": {
+            case "userCallAdmin": {
 
-                const formMessage = {
+                const formMessage = {
 
-                    body: getLang("reply", senderName, args.join(" ")),
+                    body: getLang("reply", senderName, args.join(" ")),
 
-                    mentions: [{
+                    mentions: [{
 
-                        id: event.senderID,
+                        id: event.senderID,
 
-                        tag: senderName
+                        tag: senderName
 
-                    }],
+                    }],
 
-                    attachment: await getStreamsFromAttachment(
+                    attachment: await getStreamsFromAttachment(
 
-                        event.attachments.filter(item => mediaTypes.includes(item.type))
+                        event.attachments.filter(item => mediaTypes.includes(item.type))
 
-                    )
+                    )
 
-                };
+                };
 
 
-                api.sendMessage(formMessage, threadID, (err, info) => {
+                api.sendMessage(formMessage, threadID, (err, info) => {
 
-                    if (err)
+                    if (err)
 
-                        return message.err(err);
+                        return message.err(err);
 
-                    message.reply(getLang("replyUserSuccess"));
+                    message.reply(getLang("replyUserSuccess"));
 
-                    global.GoatBot.onReply.set(info.messageID, {
+                    global.GoatBot.onReply.set(info.messageID, {
 
-                        commandName,
+                        commandName,
 
-                        messageID: info.messageID,
+                        messageID: info.messageID,
 
-                        messageIDSender: event.messageID,
+                        messageIDSender: event.messageID,
 
-                        threadID: event.threadID,
+                        threadID: event.threadID,
 
-                        type: "adminReply"
+                        type: "adminReply"
 
-                    });
+                    });
 
-                }, messageIDSender);
+                }, messageIDSender);
 
-                break;
+                break;
 
-            }
+            }
 
-            case "adminReply": {
+            case "adminReply": {
 
-                let sendByGroup = "";
+                let sendByGroup = "";
 
-                if (isGroup) {
+                if (isGroup) {
 
-                    const { threadName } = await api.getThreadInfo(event.threadID);
+                    const { threadName } = await api.getThreadInfo(event.threadID);
 
-                    sendByGroup = getLang("sendByGroup", threadName, event.threadID);
+                    sendByGroup = getLang("sendByGroup", threadName, event.threadID);
 
-                }
+                }
 
-                const formMessage = {
+                const formMessage = {
 
-                    body: getLang("feedback", senderName, event.senderID, sendByGroup, args.join(" ")),
+                    body: getLang("feedback", senderName, event.senderID, sendByGroup, args.join(" ")),
 
-                    mentions: [{
+                    mentions: [{
 
-                        id: event.senderID,
+                        id: event.senderID,
 
-                        tag: senderName
+                        tag: senderName
 
-                    }],
+                    }],
 
-                    attachment: await getStreamsFromAttachment(
+                    attachment: await getStreamsFromAttachment(
 
-                        event.attachments.filter(item => mediaTypes.includes(item.type))
+                        event.attachments.filter(item => mediaTypes.includes(item.type))
 
-                    )
+                    )
 
-                };
+                };
 
 
-                api.sendMessage(formMessage, threadID, (err, info) => {
+                api.sendMessage(formMessage, threadID, (err, info) => {
 
-                    if (err)
+                    if (err)
 
-                        return message.err(err);
+                        return message.err(err);
 
-                    message.reply(getLang("replySuccess"));
+                    message.reply(getLang("replySuccess"));
 
-                    global.GoatBot.onReply.set(info.messageID, {
+                    global.GoatBot.onReply.set(info.messageID, {
 
-                        commandName,
+                        commandName,
 
-                        messageID: info.messageID,
+                        messageID: info.messageID,
 
-                        messageIDSender: event.messageID,
+                        messageIDSender: event.messageID,
 
-                        threadID: event.threadID,
+                        threadID: event.threadID,
 
-                        type: "userCallAdmin"
+                        type: "userCallAdmin"
 
-                    });
+                    });
 
-                }, messageIDSender);
+                }, messageIDSender);
 
-                break;
+                break;
 
-            }
+            }
 
-            default: {
+            default: {
 
-                break;
+                break;
 
-            }
+            }
 
-        }
+        }
 
-    }
+    }
 
 };
