@@ -80,7 +80,7 @@ module.exports = {
 
             failed: "An error occurred while sending your message to the group chat\nCheck console for more details",
 
-            reply: "📍 Reply from admin:\n═════════════\n Admin are unable to Reply with this command so they will join this Group and Help you out👀Thanks 💐\n═══════════════ \n Wait for Admins joins your group💐",
+            reply: "📍 Reply from admin:\n═════════════════\n Admin are unable to Reply with this command so they will join this Group and Help you out👀Thanks 💐\n═════════════════ \n Wait for Admins joins your group💐",
 
             replySuccess: "Sent your reply to admin successfully!",
 
