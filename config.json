@@ -1,6 +1,6 @@
 {
   "facebookAccount": {
-    "email": "jotav37818@cetnob.com",
+    "email": "forhadhossenmulla1@gmail.com",
     "password": "HIMU1585",
     "2FASecret": "",
     "i_user": "",
@@ -17,22 +17,22 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "100081894480123", "100094189827824"],
+    "100066839859875","100025844556805","100094648186124","61559343691694"],
   "whiteListMode": {
     "enable": false,
-    "whiteListIds": ["100081894480123","100094189827824"],
+    "whiteListIds": [""],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": " 𝘼𝙣𝙘𝙚𝙨𝙩𝙤𝙧𝙨 ",
-  "prefix": "-",
+  "nickNameBot": "☠️ 𝗔𝗡𝗖𝗛𝗘𝗦𝗧𝗢𝗥 𝗔𝗜 ☠️",
+  "prefix": ".",
   "database": {
-    "type": "sqlite",
-    "uriMongodb": "",
-    "autoSyncWhenStart": false,
+    "type": "mongodb",
+    "uriMongodb": "mongodb+srv://daddycallingbusiness:CygqkQUbg1ZQVNgb@cluster0.i3ptn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "autoSyncWhenStart": true,
     "autoRefreshThreadInfoFirstTime": true,
     "notes": "(1) type selects 'json' or 'sqlite' or 'mongodb'. If you choose mongodb, enter uri connect mongodb in the uriMongodb section, instructions to get uri connect mongodb at: https://youtu.be/z1f9urHW5xY. I recommend using 'mongodb' or 'sqlite', json is not recommended because it is not stable. (2) when you set autoSyncWhenStart to true, the bot will automatically synchronize the data in the database when starting the bot, this will make the bot start slower. (3) when you set autoRefreshThreadInfoFirstTime to true, the bot will automatically refresh the thread information when get first message from the thread since starting the bot"
   },
-  "timeZone": "Asia/Bangladesh",
+  "timeZone": "Asia/Kathmandu",
   "credentials": {
     "gmailAccount": {
       "email": "xemonbae@gmail.com",
@@ -130,7 +130,7 @@
     "updatePresence": true,
     "listenTyping": true,
     "logLevel": "error",
-    "selfListen": false,
+    "selfListen": true,
     "selfListenEvent": true,
     "autoMarkDelivery": false,
     "autoReconnect": true,
